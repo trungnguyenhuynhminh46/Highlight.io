@@ -1,11 +1,8 @@
 ## Highlight - Game draw and guess
 
-## Tool
+## Highlight
 
-- Docker
-- Postgres
-- Pgadmin
-- Redis
+- Highlight.io is an engaging online multiplayer drawing and guessing game that brings together players from around the world in a fun and creative virtual environment. This project is our team's effort to build a web-based game that allows drawing and guessing. In hightlight.io, players take turns being artists and guessers in each round. The game consists of a series of rounds, where one player is designated the artist and tasked with drawing a given word or phrase on the digital canvas. The challenge lies in creating a clear representation of the word while considering the limited drawing tools available. Meanwhile, other players strive to guess the word correctly based on the evolving drawing in real-time. This multiplayer game is inspired by the game gartic.io by the way.
 
 ## Format file .env
 
@@ -22,98 +19,49 @@ VITE_REACT_GOOGLE_CLIENT_ID=yourgoogleclientid
 - Back End environment variables
 
 ```
+# SERVER
 PORT=server_port
+
+# DATABASE
 DATABASE_USERNAME=db_name
 DATABASE_PASSWORD=db_pw
 DATABASE_NAME=db_name
 DATABASE_HOST=db_host
 DATABASE_PORT=db_post
+
+# SOCKET
 SOCKET_PORT=socket_port
+
+# REDIS
 REDIS_HOST=redis_host
 REDIS_PORT=redis_port
 TIME_EXPIRED_ONE_DAY=time_expired
+
+# JWT
 JWT_ACCESSKEY=jwt_key
 JWT_ACCESSKEY_EXPIRE=jwt_expire_time
 JWT_REFRESHKEY=jwt_refresh_key
+
+# GOOGLE_OAUTH
 GOOGLE_CLIENT_ID=google_client_id
 GOOGLE_CLIENT_SECRET=google_client_secret
 ```
 
-## Installation
+## Run the project
 
-Dillinger requires [Node.js](https://nodejs.org/) v18+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-Clone project
-
-```
-git clone https://github.com/cvn-intern/Highlight-team2-project
-```
-
-### BackEnd
-
-- Development
-
-Requirement:
-File .production.env in backend folder <br />
-Run redis in port 6379 or any port (Note: config port to env file) <br />
-Run pgadmin and config port 5432 or any port (Note: config port to env file). <br />
-Create database and copy the name of database to paste to env file. <br />
+# Frontend
 
 ```sh
-cd backend
-npm install
-npm run start:dev
-```
-
-- Production
-
-Requirement: <br />
-File .production.env in backend folder <br />
-Run redis in port 6379 or any port (Note: config port to env file) <br />
-Run pgadmin and config port 5432 or any port (Note: config port to env file). <br />
-Create database and copy the name of database to paste to env file. <br />
-
-```
-cd backend
-npm install
-npm run build
-npm run start:prod
-```
-
-- Using docker
-
-Requirement: <br />
-File .docker.env in backend folder <br />
-
-```
-cd backend
-docker compose up -d
-```
-
-### FrontEnd
-
-- Development
-
-Requirement: <br />
-File .env in frontend folder <br />
-
-```
 cd frontend
-npm install
+npm i
 npm run dev
 ```
 
-- Production
+# Backend
 
-Requirement: <br />
-File .env.production.env in frontend folder <br />
+```sh
+cd backend
+docker compose up
+```
 
-```
-cd frontend
-npm install
-npm run build
-cd dist
-run index.html
-```
+Have fun!
