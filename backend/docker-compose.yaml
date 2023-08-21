@@ -1,35 +1,40 @@
+version: '3.7'
 services:
   backend:
     build: .
+    ports:
+      - '3000:3000'
+      - '3001:3001'
+    volumes:
+      - .:/app
+      - /app/node_modules
     env_file:
-      - .docker.env
+      - .env
     depends_on:
       - redis
       - postgres
-    ports:
-      - 3000:3000
-      - 3001:3001
   redis:
     container_name: cache
+    restart: always
     image: redis
     ports:
-      - 6379:6379
+      - '6379:6379'
     volumes:
       - redis:/data
   postgres:
-    container_name: db_postgres
-    image: postgres
+    container_name: db
     restart: always
-    environment:
-      - POSTGRES_DB=DRAWANDGUESS
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=1234
+    image: postgres
     ports:
-      - 5432:5432
+      - '5432:5432'
     volumes:
-      - docker-nest-postgres:/var/lib/postgresql/data
+      - postgres:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - POSTGRES_DB=${DATABASE_NAME}
+      - POSTGRES_USER=${DATABASE_USERNAME}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
 volumes:
   redis:
     driver: local
-  docker-nest-postgres:
+  postgres:
