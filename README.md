@@ -46,6 +46,16 @@ JWT_REFRESHKEY=jwt_refresh_key
 GOOGLE_CLIENT_ID=google_client_id
 GOOGLE_CLIENT_SECRET=google_client_secret
 ```
+## Screenshots
+![home_screen](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/4faf8d6d-94dc-46ee-95f7-5ae35dd4c1d5)
+![rooms_screen](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/bc40e413-73db-4fcf-a923-ac090039ad83)
+![create_rooms_screen](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/e9b48936-76de-43f9-a3ec-21911e890861)
+![create_user_theme_screen](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/88fa130a-c761-420a-a707-df7669f33f75)
+![edit_user_theme_screen](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/a49db110-f8e3-4ca6-a8ed-a7bb8395ebd9)
+![host_playing_screen](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/ff834253-b93c-4c5b-91d1-6fe14976f407)
+![choosers_playing_screen](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/ffd610af-7cbd-4526-a49b-635185039bdc)
+![drawer_playing](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/14251452-24b7-4a4b-8a29-5fe6035f2ec5)
+![choosers_playing](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/86726f67-5e12-4b95-9769-fdbb18cf3449)
 
 ## Run the project
 
