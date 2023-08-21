@@ -56,6 +56,8 @@ GOOGLE_CLIENT_SECRET=google_client_secret
 ![choosers_playing_screen](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/ffd610af-7cbd-4526-a49b-635185039bdc)
 ![drawer_playing](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/14251452-24b7-4a4b-8a29-5fe6035f2ec5)
 ![choosers_playing](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/86726f67-5e12-4b95-9769-fdbb18cf3449)
+![drawing](https://github.com/trungnguyenhuynhminh46/Highlight.io/assets/58035150/df7026ce-0029-4817-8b21-1f445f111fd7)
+
 
 ## Run the project
 
